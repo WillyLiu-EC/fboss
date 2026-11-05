@@ -1,0 +1,128 @@
+{
+  "systemLedConfig": {
+    "presentLedColor": 3,
+    "presentLedSysfsPath": "/sys/class/leds/sys_led:blue:status/brightness",
+    "absentLedColor": 4,
+    "absentLedSysfsPath": "/sys/class/leds/sys_led:amber:status/brightness"
+  },
+  "fruTypeLedConfigs": {
+    "SCM": {
+      "presentLedSysfsPath": "/sys/class/leds/scm_led:blue:status/brightness",
+      "absentLedSysfsPath": "/sys/class/leds/scm_led:amber:status/brightness"
+    },
+    "FAN": {
+      "presentLedSysfsPath": "/sys/class/leds/fan_led:blue:status/brightness",
+      "absentLedSysfsPath": "/sys/class/leds/fan_led:amber:status/brightness"
+    },
+    "PSU": {
+      "presentLedSysfsPath": "/sys/class/leds/psu_led:blue:status/brightness",
+      "absentLedSysfsPath": "/sys/class/leds/psu_led:amber:status/brightness"
+    },
+    "SMB": {
+      "presentLedSysfsPath": "/sys/class/leds/smb_led:blue:status/brightness",
+      "absentLedSysfsPath": "/sys/class/leds/smb_led:amber:status/brightness"
+    }
+  },
+  "fruConfigs": [
+    {
+      "fruName": "SCM_PG_0",
+      "fruType": "SCM",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/scm0_pg",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "SCM_PG_1",
+      "fruType": "SCM",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/scm1_pg",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "FAN1",
+      "fruType": "FAN",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/sensors/SCM_FAN_CPLD/fan1_present",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "FAN2",
+      "fruType": "FAN",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/sensors/SCM_FAN_CPLD/fan2_present",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "POWER_BRICK1",
+      "fruType": "PSU",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/pwr_brick1_pg",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "POWER_BRICK2",
+      "fruType": "PSU",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/pwr_brick2_pg",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "POWER_BRICK3",
+      "fruType": "PSU",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/pwr_brick3_pg",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "POWER_BRICK4",
+      "fruType": "PSU",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/pwr_brick4_pg",
+          "desiredValue": 1
+        }
+      }
+    },
+      {
+      "fruName": "SMB LEFT",
+      "fruType": "SMB",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/smb_left_pg",
+          "desiredValue": 1
+        }
+      }
+    },
+    {
+      "fruName": "SMB RIGHT",
+      "fruType": "SMB",
+      "presenceDetection": {
+        "sysfsFileHandle": {
+          "presenceFilePath": "/run/devmap/cplds/MCB_CPLD/smb_right_pg",
+          "desiredValue": 1
+        }
+      }
+    }
+  ]
+}
