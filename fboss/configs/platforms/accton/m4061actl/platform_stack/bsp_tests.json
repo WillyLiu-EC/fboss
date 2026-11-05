@@ -1,0 +1,9 @@
+{
+  "testData": {
+    "SCM.SCM_FAN_CPLD": {
+      "watchdogTestData": {
+        "numWatchdogs": 1
+      }
+    }
+  }
+}
