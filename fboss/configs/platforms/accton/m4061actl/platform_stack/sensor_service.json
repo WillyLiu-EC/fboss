@@ -113,7 +113,7 @@
         },
         {
           "name": "MCB_U19_XP12R0V_BRICK_1_IOUT",
-          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK1/in2_input",
+          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK1/curr6_input",
           "type": 2,
           "thresholds": {
             "upperCriticalVal": 133,
@@ -161,7 +161,7 @@
         },
         {
           "name": "MCB_U20_XP12R0V_BRICK_2_IOUT",
-          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK2/in2_input",
+          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK2/curr6_input",
           "type": 2,
           "thresholds": {
             "upperCriticalVal": 133,
@@ -209,7 +209,7 @@
         },
         {
           "name": "MCB_U21_XP12R0V_BRICK_3_IOUT",
-          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK3/in2_input",
+          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK3/curr6_input",
           "type": 2,
           "thresholds": {
             "upperCriticalVal": 133,
@@ -257,7 +257,7 @@
         },
         {
           "name": "MCB_U18_XP12R0V_BRICK_4_IOUT",
-          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK4/in2_input",
+          "sysfsPath": "/run/devmap/sensors/MCB_12V_PWRBRK4/curr6_input",
           "type": 2,
           "thresholds": {
             "upperCriticalVal": 133,
